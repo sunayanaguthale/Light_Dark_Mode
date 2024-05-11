@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Light And Dark Mode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <label id="dark"></label>
+    </header>
+    <div class="container">
+        <h1>Light Dark Mode</h1><br>
+        <img src="img.jpg" alt=""><br><br>
+        <p>Positive contrast polarity (light mode) refers to dark-font text on light background. Negative contrast polarity (dark mode) denotes the combination of light (e.g., white) text on dark (e.g., black) background.</p>
+    </div>
+    <script>
+        var content = document.getElementsByTagName('body')[0];
+        var darkmode = document.getElementById('dark');
+        darkmode.addEventListener('click', function() {
+            darkmode.classList.toggle('active');
+            content.classList.toggle('night');
+        })
+    </script>
+</body>
+
+</html>
